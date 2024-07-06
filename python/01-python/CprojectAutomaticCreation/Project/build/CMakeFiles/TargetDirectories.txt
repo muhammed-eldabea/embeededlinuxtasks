@@ -1,0 +1,3 @@
+/home/maio/embeededlinuxtasks/python/01-python/CprojectAutomaticCreation/Project/build/CMakeFiles/helloWorld.dir
+/home/maio/embeededlinuxtasks/python/01-python/CprojectAutomaticCreation/Project/build/CMakeFiles/edit_cache.dir
+/home/maio/embeededlinuxtasks/python/01-python/CprojectAutomaticCreation/Project/build/CMakeFiles/rebuild_cache.dir
