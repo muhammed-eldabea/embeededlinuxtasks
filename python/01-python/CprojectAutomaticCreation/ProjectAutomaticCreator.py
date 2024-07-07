@@ -16,6 +16,18 @@ os.system("mkdir -p Project/build")
 os.system("touch  Project/src/main.cpp")
 #creat the cmake build file list 
 os.system("touch  Project/CMakeLists.txt") 
+result = os.system("mkdir -p Project/src")
+if result != 0:
+    print("Error creating directory Project/src")
+    # Consider exiting or handling the error more gracefully
+result = os.system("mkdir -p Project/src")
+if result != 0:
+    print("Error creating directory Project/src")
+    # Consider exiting or handling the error more gracefully
+result = os.system("mkdir -p Project/src")
+if result != 0:
+    print("Error creating directory Project/src")
+    # Consider exiting or handling the error more gracefully
 
 file = open("Project/src/main.cpp","a") 
 file.write("""#include <iostream> \n  
