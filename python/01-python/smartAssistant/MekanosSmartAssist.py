@@ -39,8 +39,31 @@ def listen():
         return ""
 
 if __name__ == "__main__":
+    speak("Hello, I am Mekanos, your smart assistant. How can I help you?")
     while True:
-        text = listen()  # Comment out this line
-        if text:
-            speak(text)  # Comment out this line
+        text = listen()
+        if "Mekanos" in text:
+            text = text.replace("Mekanos", "")
+            if "exit" in text:
+                speak("Goodbye!")
+                break
+            else:
+                speak(f"You said: {text}")
+                # Add your logic here to process the user's request
+                # For example, you can use if-else statements to handle different commands
+                # ...
+        if "time" in text:
+            speak("The current time is " + time.strftime("%H:%M:%S"))
+            
+        if "date" in text:
+            speak("The current date is " + time.strftime("%d/%m/%Y"))
+            
+        if "hello" in text:
+            speak("Hello there!")
+            
+        if "how are you" in text:
+            speak("I am doing well, thank you for asking.")
+        if "exit" in text:
+            speak("Goodbye!")
+            break     
         time.sleep(1)
