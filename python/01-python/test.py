@@ -1,9 +1,17 @@
-import pyautogui as py 
-import time
+class Human :
+    __classname = "Human"
 
-py.moveTo(100, 100, duration=1)
-py.click()
-time.sleep(1)
-py.typewrite("Hello World")
-time.sleep(1)
-py.press('enter')
+    def Class_print (self):
+        print(self.__classname)
+
+
+
+
+
+h1=Human() 
+
+h1.__classname = 500
+
+print(h1.__classname)
+
+h1.Class_print()
