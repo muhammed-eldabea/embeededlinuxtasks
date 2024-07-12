@@ -1,0 +1,15 @@
+
+[Server]                                         API                                         Client 
+
+Set the Socket                                                                           set the socket 
+bind                                                                                     Connect 
+listen                                                    
+ >>                                        ClienNewtHandling()  
+                                        if client add in data base
+                                            pass (DoNothing) 
+                                        else : 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    Server_Send(Send UserName)>>>>>>>>>>>>>>>>>>  if the data == "Send User Name "
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   Get the User Name  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<SocketSend(UserName)                         
+                                            Appeend the UserName + Address                          
+                                    start thread with soket data and argument (Add , socket)                        
+
